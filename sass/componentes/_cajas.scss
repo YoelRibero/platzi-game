@@ -1,0 +1,103 @@
+.caja--con-fondo {
+  margin-bottom: 1rem;
+  position: relative;
+  background-color: $color-primario;
+  .caja__imagen {
+    overflow: hidden;
+    img {
+      width: 100%;
+      opacity: .6;
+      object-fit: contain;
+    }
+  }
+  &__contenido {
+    display: block;
+    position: absolute;
+    top: 2rem;
+    padding: 1rem;
+    text-align: center;
+    color: $color-claro;
+    h2 {
+      letter-spacing: 1px;
+      @include titulos($fuente2);
+      @include font-size(25px);
+    }
+    p {
+      display: none;
+    }
+  }
+  &__categoria {
+    display: block;
+    padding: .5rem 1rem;
+    max-width: 120px;
+    margin: 0 auto .5rem;
+    background-color: $color-secundario;
+    border-radius: 3px;
+    letter-spacing: 2px;
+    @include font-size(12px);
+    @include titulos($fuente2);
+    font-weight: 600;
+  }
+  &__stats {
+    position: absolute;
+    bottom: 1rem;
+    width: 100%;
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      li {
+        margin-right: 1.5rem;
+        color: $color-claro;
+        i {
+          margin-right: .5rem;
+        }
+      }
+    }
+  }
+}
+
+.caja--mediana {
+  &.caja-zelda {
+    display: none;
+  }
+}
+
+.caja--pequena {
+  max-height: 350px;
+  overflow: hidden;
+  .caja__imagen {
+    max-height: 350px;
+    width: 100%;
+    img {
+      object-fit: cover;
+    }
+  }
+  .caja--con-fondo {
+    &__contenido {
+      padding: 0;
+      text-align: left;
+      h2 {
+        padding: 1.5rem 1rem;
+        width: 50%;
+        text-transform: none;
+      }
+    }
+    &__categoria {
+      border-radius: 0;
+      margin: 0;
+      padding: .5rem 1.5rem 1rem;
+    }
+  }
+  &.caja-ff, &.caja-xbox, &.caja-fortnite {
+    display: none;
+  }
+  &.caja-rdr2 {
+    order: 3;
+    margin-bottom: 3rem;
+  }
+}
+

@@ -1,0 +1,38 @@
+.sidebar--listado {
+  order: 2;
+  padding: 1rem 0 3rem;
+  margin-bottom: 2rem;
+  border: 1px solid get-opacity($color-primario, .1);
+  @include caja;
+  h3 {
+    padding: 1rem 2rem;
+    border-bottom: 1px solid get-opacity($color-primario, .1);
+    font-size: 1rem;
+    letter-spacing: 1px;
+    @include titulos($fuente2);
+  }
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  li {
+    padding: 3rem 2rem 2rem;
+    border-bottom: 1px solid get-opacity($color-primario, .1);
+    &:last-child {
+      border: 0;
+    }
+  }
+  a {
+    display: flex;
+    color: $color-primario;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+  &__numero {
+    color: get-opacity($color-primario, .2);
+    @include titulos($fuente2);
+    margin-right: 2rem;
+  }
+}

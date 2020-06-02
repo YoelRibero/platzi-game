@@ -1,0 +1,43 @@
+.footer--principal {
+  display: flex;
+  flex-direction: column;
+  background: $color-primario;
+  padding: 0 1rem 5rem;
+  .nav--footer, .nav--social{
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+    li {
+      color: get-opacity($color-claro, .5);
+      @include font-size(16px);
+      a {
+        color: get-opacity($color-claro, .5);
+        letter-spacing: 1px;
+        @include titulos($fuente2);
+        font-weight: normal;
+      }
+    }
+  }
+}
+
+.logo--footer {
+  margin-bottom: 1rem;
+}
+
+.nav--footer {
+  margin-bottom: 2rem;
+  li {
+    margin-bottom: .5rem;
+  }
+}
+
+.nav--social {
+  ul {
+    display: flex;
+    li {
+      margin-right: 1.5rem;
+    }
+  }
+}

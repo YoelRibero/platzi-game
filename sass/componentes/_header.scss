@@ -1,0 +1,14 @@
+.header--principal {
+  display: flex;
+  height: 90px;
+  border-bottom: 1px solid get-opacity($color-primario, .1);
+  @include space-responsive;
+}
+
+.nav--header {
+  display: none;
+}
+
+.header__busqueda {
+  display: none;
+}
