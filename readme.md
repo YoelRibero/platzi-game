@@ -9,5 +9,4 @@ _Integro todas las páginas del curso de pre-procesador en un proyecto final lla
 - En caso de que quieras editarlo, para trabajar use prepros como compilador, te lo recomiendo [Prepros](https://prepros.io/)
 - Abre la carpeta que te genere con el y ya tenes compilador para trabajar. 
 
-![image-responsive](https://repository-images.githubusercontent.com/268692436/2a837100-a469-11ea-8c80-50b1c3ede24b)
-![image-responsive-second](https://repository-images.githubusercontent.com/268692436/ad0c3080-a469-11ea-89d8-52678afd281b)
+![image-responsive](https://repository-images.githubusercontent.com/268692436/d9c04800-a469-11ea-9379-7aabda6d9979)
