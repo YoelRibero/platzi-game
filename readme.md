@@ -10,3 +10,4 @@ _Integro todas las páginas del curso de pre-procesador en un proyecto final lla
 - Abre la carpeta que te genere con el y ya tenes compilador para trabajar. 
 
 ![image-responsive](https://repository-images.githubusercontent.com/268692436/2a837100-a469-11ea-8c80-50b1c3ede24b)
+![image-responsive-second](https://repository-images.githubusercontent.com/268692436/2a837100-a469-11ea-8c80-50b1c3ede24b)
