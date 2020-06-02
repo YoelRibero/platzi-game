@@ -60,6 +60,17 @@
   }
 }
 
+.caja--grande {
+  .caja__imagen {
+    min-height: 350px;
+    img {
+      position: absolute;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}
+
 .caja--mediana {
   &.caja-zelda {
     display: none;

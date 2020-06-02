@@ -624,6 +624,15 @@ main {
   margin-right: 0.5rem;
 }
 
+.caja--grande .caja__imagen {
+  min-height: 350px;
+}
+.caja--grande .caja__imagen img {
+  position: absolute;
+  height: 100%;
+  object-fit: cover;
+}
+
 .caja--mediana.caja-zelda {
   display: none;
 }
