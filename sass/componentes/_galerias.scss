@@ -1,0 +1,28 @@
+.galeria {
+  padding: 2rem 1rem;
+  border-radius: 25px;
+  text-align: left;
+  @include caja;
+  h2 {
+    margin-bottom: 1rem;
+  }
+  img {
+    border-radius: 5px;
+  }
+  &__foto-principal {
+    float: left;
+    width: 31%;
+    img {
+      width: 100%;
+    }
+    @media screen and (min-width: 400px) {
+      width: auto;
+      overflow: hidden;
+    }
+  }
+  &__fotos-adicionales {
+    img {
+      margin: 0 .5rem .5rem;
+    }
+  }
+}

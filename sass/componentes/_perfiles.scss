@@ -1,0 +1,54 @@
+.perfil {
+  width: 100%;
+  flex-shrink: 0;
+  background-color: $color-secundario;
+  color: $color-claro;
+  padding: 2rem 1rem;
+  text-align: center;
+  &__avatar {
+    border-radius: 50%;
+    margin-bottom: .5rem;
+  }
+  &__nombre {
+    @include font-size(20px);
+  }
+  &__titulo {
+    color: get-opacity($color-claro, .5);
+    margin-bottom: 1rem;
+    @include font-size(12px);
+  }
+  &__boton {
+    display: block;
+    max-width: 100px;
+    margin: 0 auto 1rem;
+    padding: .5rem 1rem;
+    color: $color-claro;
+    border: 1px solid $color-claro;
+    border-radius: 25px;
+    background-color: get-opacity($color-primario, .5);
+    transition: .3s;
+    @include font-size(12px);
+    @include titulos($fuente2);
+    &:hover {
+      text-decoration: none;
+      background-color: get-opacity($color-primario, .8);
+    }
+  }
+  &__minibio {
+    margin-bottom: 1rem;
+    h3 {
+      color: get-opacity($color-claro, .5);
+      @include font-size(16px);
+    }
+  }
+  @include media(tablet) {
+    padding: 3rem 10rem;
+  }
+  @include media(desktop-s) {
+    padding: 3rem 1rem;
+    width: 50%;
+  }
+  @include media (desktop-m) { 
+    padding: 3rem 6rem;
+  }
+}

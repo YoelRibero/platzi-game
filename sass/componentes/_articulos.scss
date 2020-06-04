@@ -33,3 +33,33 @@
     max-width: 50%;
   }
 }
+
+// Article UserPage
+.articulos {
+  padding: 1rem;
+  @include media(desktop-s) {
+    width: 50%;
+  }
+  @include media(desktop-m) {
+    padding-left: 3rem;
+  }
+}
+
+.articulo {
+  padding: 2rem 0 1rem;
+  margin-bottom: 2rem;
+  border-bottom: 5px solid $color-secundario;
+  &__categoria {
+    display: block;
+    color: $color-secundario;
+    margin-bottom: .5rem;
+    @include titulos($fuente2);
+  }
+  &__titulo {
+    margin-bottom: 1rem;
+    @include font-size(25px);
+  }
+  &__descripcion {
+    @include font-size(18px);
+  }
+}

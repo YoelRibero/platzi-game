@@ -1,0 +1,14 @@
+.estadistica--perfil {
+  width: 100%;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  margin-bottom: 2rem;
+  border-radius: 25px;
+  display: flex;
+  justify-content: space-evenly;
+  @include caja;
+  span {
+    @include titulos($fuente2);
+    font-weight: normal;
+  }
+}
