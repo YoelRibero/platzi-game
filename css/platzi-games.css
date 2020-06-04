@@ -1406,6 +1406,21 @@ main {
   font-weight: normal;
 }
 
+.estadistica--articulos ul {
+  padding: 1rem 0;
+  margin: 0;
+  list-style: none;
+  border-top: 1px solid rgba(51, 51, 51, 0.3);
+  display: flex;
+  justify-content: space-evenly;
+}
+.estadistica--articulos ul li {
+  color: rgba(51, 51, 51, 0.3);
+}
+.estadistica--articulos ul li i {
+  margin-right: 0.5rem;
+}
+
 .ubicacion--perfil {
   padding: 2rem 3rem;
   border-radius: 25px;
@@ -1463,4 +1478,81 @@ main {
 }
 .galeria__fotos-adicionales img {
   margin: 0 0.5rem 0.5rem;
+}
+
+.buscador {
+  padding: 4rem 2rem;
+  margin-bottom: 2rem;
+  background-image: url("../images/cover.jpg");
+  background-repeat: no-repeat;
+}
+@media only screen and (min-width: 992px) {
+  .buscador {
+    background-size: 100%;
+  }
+}
+.buscador__input {
+  display: block;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  border: 0;
+  border-radius: 25px;
+  padding: 0.5rem 1rem;
+  outline: none;
+  color: rgba(51, 51, 51, 0.8);
+}
+
+.contenido {
+  padding: 1rem;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+.contenido .caja__contenido {
+  padding-bottom: 1rem;
+}
+@media only screen and (min-width: 768px) {
+  .contenido {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.encabezado--con-filtros {
+  padding: 0 1rem;
+  max-width: 1300px;
+  margin: 0 auto 2rem;
+}
+.encabezado--con-filtros h2 {
+  margin-bottom: 1rem;
+}
+@media only screen and (min-width: 768px) {
+  .encabezado--con-filtros h2 {
+    float: left;
+  }
+}
+
+.filtros {
+  margin-left: auto;
+  max-width: 250px;
+  padding: 0.5rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  color: #333333;
+  background-color: #FFF;
+  box-shadow: 0px 20px 33px 0px rgba(0, 0, 0, 0.2);
+}
+.filtros span {
+  margin-right: 0.5rem;
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.filtros a {
+  color: #333333;
+  margin-right: 0.5rem;
+}
+.filtros a:hover {
+  text-decoration: none;
 }

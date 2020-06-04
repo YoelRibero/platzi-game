@@ -1,0 +1,32 @@
+.encabezado--con-filtros {
+  padding: 0 1rem;
+  max-width: 1300px;
+  margin: 0 auto 2rem;
+  h2 {
+    margin-bottom: 1rem;
+    @include media (tablet) {
+      float: left;
+    }
+  }
+}
+
+.filtros {
+  margin-left: auto;
+  max-width: 250px;
+  padding: .5rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  @include caja;
+  span {
+    margin-right: .5rem;
+    @include titulos($fuente2);
+  }
+  a {
+    color: $color-primario;
+    margin-right: .5rem;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}

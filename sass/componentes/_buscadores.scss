@@ -1,0 +1,33 @@
+.buscador {
+  padding: 4rem 2rem;
+  margin-bottom: 2rem;
+  background-image: url('../images/cover.jpg');
+  background-repeat: no-repeat;
+  @include media (desktop-s) {
+    background-size: 100%;
+  }
+  &__input {
+    display: block;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    border: 0;
+    border-radius: 25px;
+    padding: .5rem 1rem;
+    outline: none;
+    color: get-opacity($color-primario, .8);
+  }
+}
+
+.contenido {
+  padding: 1rem;
+  max-width: 1300px;
+  margin: 0 auto;
+  .caja__contenido {
+    padding-bottom: 1rem;
+  }
+  @include media (tablet) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
