@@ -2,12 +2,16 @@
   margin-bottom: 1rem;
   position: relative;
   background-color: $color-primario;
+  border-radius: 3px;
   .caja__imagen {
     overflow: hidden;
     img {
       width: 100%;
       opacity: .6;
       object-fit: contain;
+    }
+    @include media (desktop-s) {
+      overflow: visible;
     }
   }
   &__contenido {
@@ -24,6 +28,9 @@
     }
     p {
       display: none;
+      @include media (tablet) {
+        display: block;
+      }
     }
   }
   &__categoria {
@@ -58,22 +65,46 @@
       }
     }
   }
+  @include media (desktop-s) {
+    margin: 0;
+  }
 }
 
 .caja--grande {
   .caja__imagen {
     min-height: 350px;
+    @include media (desktop-s) {
+      min-height: none;
+    }
     img {
       position: absolute;
       height: 100%;
       object-fit: cover;
     }
   }
+  @include media (desktop-s) {
+    max-width: 1000px;
+    height: 100%;
+  }
 }
 
 .caja--mediana {
   &.caja-zelda {
     display: none;
+    @include media (tablet) {
+      display: block;
+    }
+  }
+  @include media (desktop-s) {
+    max-width: 100%;
+    height: 100%;
+    .caja__imagen {
+      height: 100%;
+      img {
+        height: 100%;
+        object-fit: cover;
+      }
+    }
   }
 }
 
@@ -83,8 +114,15 @@
   .caja__imagen {
     max-height: 350px;
     width: 100%;
+    @include media (desktop-s) {
+      max-height: none;
+      height: 100%;
+    }
     img {
       object-fit: cover;
+      @include media (desktop-s) {
+        height: 100%;
+      }
     }
   }
   .caja--con-fondo {
@@ -95,6 +133,11 @@
         padding: 1.5rem 1rem;
         width: 50%;
         text-transform: none;
+        @include media (desktop-s) {
+          width: 100%;
+          padding: .51rem 1rem;
+          @include font-size(20px);
+        }
       }
     }
     &__categoria {
@@ -105,10 +148,69 @@
   }
   &.caja-ff, &.caja-xbox, &.caja-fortnite {
     display: none;
+    @include media (tablet) {
+      display: block;
+    }
   }
   &.caja-rdr2 {
     order: 3;
     margin-bottom: 3rem;
+    @include media (tablet) {
+      order: initial;
+    }
+    @include media (desktop-s) {
+      margin: 0;
+    }
+  }
+  @include media (desktop-s) {
+    max-width: 300px;
+    height: 100%;
   }
 }
 
+// Cajas Article
+
+.contenedor--cajas {
+  width: 90%;
+  margin: 0 auto;
+  @include media (tablet) {
+    width: 100%;
+    padding: 0 1rem;
+    display: flex;
+    justify-content: space-between;
+  }
+  @include media (desktop-s) {
+    max-width: 1300px;
+  }
+}
+
+.caja {
+  margin-bottom: 2rem;
+  border-radius: 5px;
+  overflow: hidden;
+  @include caja;
+  &__imagen {
+    img {
+      width: 100%;
+    }
+  }
+  &__contenido {
+    padding: 1rem 1rem 3rem;
+    h3 {
+      margin-bottom: 1rem;
+    }
+    a:not([href]):not([tabindex]) {
+      color: $color-variacion;
+      @include titulos($fuente2);
+    }
+  }
+  &__categoria {
+    display: block;
+    margin-bottom: .5rem;
+    color: $color-secundario;
+    @include titulos($fuente2);
+  }
+  @include media (tablet) {
+    width: 32%;
+  }
+}

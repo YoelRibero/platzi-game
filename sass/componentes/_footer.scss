@@ -20,6 +20,21 @@
       }
     }
   }
+  @include media (desktop-s) {
+    .container--footer {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+  @include media (desktop-m) {
+    padding: 0 0 4rem;
+    .container--footer {
+      max-width: 1300px;
+      width: 100%;
+      margin: 0 auto;
+      padding: 0 1rem;
+    }
+  }
 }
 
 .logo--footer {
@@ -31,6 +46,22 @@
   li {
     margin-bottom: .5rem;
   }
+  @include media (desktop-s) {
+    padding-top: 2.3rem;
+    ul {
+      display: flex;
+      li {
+        margin-right: .5rem;
+      }
+    }
+  }
+  @include media (desktop-m) {
+    ul {
+      li {
+        margin-right: 1.5rem;
+      }
+    }
+  }
 }
 
 .nav--social {
@@ -38,6 +69,12 @@
     display: flex;
     li {
       margin-right: 1.5rem;
+    }
+  }
+  @include media (desktop-s) {
+    padding-top: 2.3rem;
+    ul {
+      display: flex;
     }
   }
 }

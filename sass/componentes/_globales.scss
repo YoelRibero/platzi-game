@@ -57,6 +57,9 @@ body {
 	color: $color-primario;
 	@include titulos($fuente1);
 	@include font-size(16px);
+	@include media (desktop-s) {
+		@include font-size(18px);
+	}
 }
 
 main {

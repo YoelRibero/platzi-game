@@ -1,0 +1,35 @@
+.articulo--principal {
+  max-width: 90%;
+  margin: 0 auto;
+  p {
+    margin-bottom: 2rem;
+    @include media (desktop-s) {
+      @include font-size(20px);
+    }
+  }
+  .articulo--principal__intro {
+    @include font-size(25px);
+    @include media (desktop-s) {
+      @include font-size(35px);
+    }
+  }
+  h3 {
+    color: $color-secundario;
+    margin-bottom: 1rem;
+    @include titulos($fuente2);
+    @include media (desktop-s) {
+      @include font-size(25px);
+    }
+  }
+  h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    @include font-size(40px);
+    @include media (desktop-s) {
+      @include font-size(50px);
+    }
+  }
+  @include media (desktop-s) {
+    max-width: 50%;
+  }
+}

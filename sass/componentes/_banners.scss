@@ -7,11 +7,19 @@
     margin-bottom: 3rem;
     @include font-size(50px);
     @include titulos($fuente2);
+    @include media (desktop-s) {
+      margin-bottom: 1rem;
+      @include font-size(25px);
+    }
   }
   p {
     color: get-opacity($color-claro, .9);
     margin-bottom: 3rem;
-    @include font-size(30px)
+    @include font-size(30px);
+    @include media (desktop-s) {
+      margin-bottom: 1rem;
+      @include font-size(20px);
+    }
   }
   .button {
     border: 1px solid $color-claro;
@@ -20,9 +28,24 @@
     margin-bottom: 2rem;
     letter-spacing: 1px;
     cursor: pointer;
+    color: $color-claro;
+    transition: .3s;
     @include titulos($fuente2);
     &:hover {
-      background-color: get-opacity($color-secundario, .5);
+      background-color: $color-claro;
+      color: $color-secundario;
+      text-decoration: none;
     }
+    @include media (desktop-s) {
+      display: block;
+      padding: 1rem;
+    }
+  }
+  @include media (tablet) {
+    order: initial;
+    margin-bottom: 1rem;
+  }
+  @include media (desktop-s) {
+    margin: 0;
   }
 }
